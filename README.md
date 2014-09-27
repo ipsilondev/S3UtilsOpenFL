@@ -5,7 +5,8 @@ An static class to interact directly with S3 from OpenFL / Haxe
 
 For now, only upload (the most difficult thing) is supported, emulating as it would be a html post form (described here http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-post-example.html ). 
 This let's you upload anything, and define size limit, permissions etc.. when you calculate the policy in the backend.
-Yes, it requires a server for security reason, you *should not* include your access and secret S3 keys in your app.
+
+Yes, it requires a server for security reason, you **should not** include your access and secret S3 keys in your app.
 Included there is a working example in of both parts, client and server (in NodeJS). Be sure to edit the files with your url, configure also conf/aws.json in the backend and server.js with the properly url's, bucket names and etc..
 
 I'm expecting to update this library with more functions in the following weeks :D
